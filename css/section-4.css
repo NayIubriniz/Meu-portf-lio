@@ -1,18 +1,20 @@
 .sessao-4{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
+  flex-direction: row;
   gap: 15px;
   width: 100%;
   height: auto;
   padding: 20px;
+  border-top: 1px solid #41414194;
 }
 .projetos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
   gap: 20px; /* Espaçamento entre os cards */
   padding: 20px;
-  width: 100%; /* Ajusta à largura do container pai */
+  width: 90%; /* Ajusta à largura do container pai */
   max-width: 1200px; /* Largura máxima */
   margin: 0 auto;
 }
@@ -99,7 +101,7 @@
     height: auto;
   }
   .projetos{
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }

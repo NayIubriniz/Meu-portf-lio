@@ -7,6 +7,7 @@
     width: 100%;
     height: auto;
     padding: 20px;
+    border-top: 1px solid #41414194;
 }
 .container-contato{
     display: flex;
@@ -20,24 +21,30 @@
     width: 500px;
 }
 .divisao-contato > h1{
-    font-size: 25px;
+    text-align: center;
+    font-size: 45px;
     font-family: roboto;
+    margin-bottom: 20px;
     color: var(--color-3);
 }
 .divisao-contato > p{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .meus-dados{
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .meus-dados > ul{
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     padding: 0px;
+    gap: 25px;
 }
-.fa-phone, .fa-envelope, .fa-linkedin{
+.fa-square-github, .fa-envelope, .fa-linkedin{
     font-size: 20px;
 }
 .li-lista-5{
@@ -51,58 +58,6 @@
 }
 .li-lista-5 > a:hover{
     transition: 0.3s ease-out;
-}
-.formulario{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin: 0 auto;
-    width: 500px;
-}
-.form-contato{
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.form-contato > input{
-    width: 500px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 1px solid #383737;
-
-}
-.form-contato label{
-    font-family: roboto;
-    font-size: 15px;
-    margin-top: 8px;
-}
-
-textarea, input{
-    border: 1px solid #161616;
-    margin-bottom: 10px;
-    background-color: transparent;
-}
-.btn-5{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-   width: 70px; 
-   border-radius: 8px;
-   font-family: roboto;
-   font-weight: bold;
-   color: var(--color-2);
-   border: none;
-}
-.btn-5:hover{
-    background-color: var(--color-3);
-    transition: 0.3s ease-out;
-    cursor: pointer;
 }
 @media (max-width:768px) and (min-width:320px){
 .container-contato{
@@ -128,60 +83,15 @@ textarea, input{
  .meus-dados > ul{
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     padding: 0px;
     gap: 20px;
     padding-top: 25px;
 }
-.fa-phone, .fa-envelope, .fa-linkedin{
+.fa-square-github, .fa-envelope, .fa-linkedin{
     font-size: 15px;
-}
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-}
-.formulario input{
-    width: 350px;
-}
-textarea{
-    width: 300px;
-}
-.form-contato > label{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    text-align: start;
-}
-.divisao-contato{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-}
-.meus-dados{
-    width: 300px;
-}
-.divisao-contato > h1{
-    font-size: 30px;
-    width: 430px;
-}
-.divisao-contato > p{
-    font-size: 15px;
-    width: 430px;
-}
-.form-contato{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 250px;
-    height: auto;
-    margin: 0px;
-}
- 
+} 
 }
 @media (min-width:768px) and (max-width:1091px){
 .container-contato{
@@ -204,9 +114,5 @@ textarea{
     align-items: center;
     flex-direction: row;
     gap: 10px;
-}
-.btn-5{
-    margin-top: 30px;
-    width: 150px;
 }
 }
