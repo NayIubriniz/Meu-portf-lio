@@ -1,0 +1,131 @@
+.sessao-3{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    gap: 10px;
+}
+.divisao-sessao3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+.h1-sessao-3{
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: var(--color-3);
+    margin:0px;
+    letter-spacing:25px;
+    word-break: break-all;
+    opacity:15%;
+    text-align: start;
+}
+.divisao-formacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 400px;
+    gap: 10px;
+}
+.formacao-1{
+    width: 220px;
+    height:200px;
+    border-radius: 8px;
+    border: 1px solid #161616;
+}
+.sessao3-h2{
+    text-align: center;
+    font-family: Roboto;
+    border-bottom: 1px solid #161616;
+    color: var(--color-1);
+}
+.p-sessao3{
+    font-family: roboto;
+    text-align: center;
+}
+.divisao-idioma{
+    width: 450px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+h3{
+    font-family: Roboto;
+    text-align: center;
+    margin: 0px;
+}
+.p-idioma{
+    font-family: roboto;
+    margin: 0;
+}
+@media (max-width:768px) and (min-width:500px){
+    .sessao-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        border-top: 1px solid #5e5c5ca4;
+    }
+    .h1-sessao-3{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .divisao-sessao3{
+        height: auto;
+    }
+    .divisao-formacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+    }
+    .formacao-1{
+        width: 160px;
+    }
+    .divisao-idioma{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:1091px){
+    .sessao-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+        border-top: 1px solid #41414194;
+    }
+    .divisao-sessao3{
+        height: 200px;
+        margin-top: 30px;
+    }
+    .h1-sessao-3{
+        margin: 0 auto;
+        height: auto;
+        font-size: 45px;
+    }
+    .divisao-formacao{
+        height: auto;
+    }
+    .divisao-idioma{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+}

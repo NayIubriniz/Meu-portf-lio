@@ -1,0 +1,238 @@
+.imagem-logo{
+    width: 50px;
+}
+.div-listas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 450px;
+}
+.ul-header{
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: lighter;
+}
+.descricao-header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 90%;
+    height: 500px;
+}
+.img-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin-top: 5%;
+}
+img.img-portfolio{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+}
+.cv{
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: roboto;
+    font-size: 15px;
+    background-color: var(--color-3);
+    font-weight: 100;
+    color: #000000;
+    width: 200px;
+    height: 70px;
+    transition: transform 0.2s ease;
+    text-align: center;
+    font-weight: bold;
+}
+.cv:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(95, 14, 133, 0.5);
+    cursor: pointer;
+    color: purple;
+}
+
+.info-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+    width: 800px;
+    height: 400px;
+}
+.detalhes{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 45px;
+    text-align: center;
+}
+.estilo{
+    color: var(--color-3);
+}
+.primeiro-h1{
+    font-family: 'poppins';
+    font-size: 50px;
+    margin: 0px;
+}
+.svg{
+    background-image: url(../img/svg/retangulo-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 3px;
+    left: 74%;
+    top: 62.5%;
+    z-index: -1;
+    position: absolute;
+}
+.svg-2{
+    background-image: url(../img/svg/retangulo-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 3px;
+    left: 45.6%;
+    top: 51.5%;
+    z-index: -1;
+    position: absolute;
+}
+.local{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+}
+/*MENU HAMBURGUER*/
+.menu-hamburguer{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.div-listas ul li {
+    text-decoration: none;
+    color: var(--color-1);
+}
+.nav-lista{
+    max-height: 0;
+    transition: max height 0.5 ease-out;
+}
+.nav-lista{
+    max-height: 200px;
+}
+@media (max-width: 768px) and (min-width:500px){
+    .descricao-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+        height: 450px;
+    }
+    .info-portfolio{
+        width: 340px;
+    }
+    .img-principal{
+        margin: 0px;
+    }
+    img.img-portfolio{
+        margin-top: 30px;
+        width: 150px;
+        height: 200px;
+    }
+    .cv{
+        width: 200px;
+        height: 20px;
+    }
+    .primeiro-h1,.detalhes{
+        font-size: 30px;
+    }
+    .detalhes{
+        margin-top: 0px;
+    }
+    .local{
+        font-size: 15px;
+    }
+    .svg{
+        display: none;
+    }
+    .svg-2{
+        display: none;
+    }
+    .div-listas{
+        display: none;
+        width: 90%;
+        position: absolute;
+        top: 51px;
+        left: 30;
+        background-color: #600f86e5;
+        text-align: center;
+        z-index: 10;
+    }
+    .div-listas.active{
+        display: block;
+    }
+    .menu-hamburguer{
+        display: block;
+    }
+    .div-listas ul{
+        flex-direction: column;
+    }
+    .div-listas ul li{
+        margin: 5px 0;
+    }
+    .div-listas a{
+        color: white;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .descricao-header{
+        gap: 30px;
+    }
+    img.img-portfolio{
+        width: 150px;
+    }
+    a.cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cv{
+        width: 150px;
+        height: 40px;
+    }
+    .primeiro-h1{
+        font-size: 35px;
+    }
+    .detalhes{
+        font-size: 25px;
+    }
+    .svg{
+        display: none;
+    }
+    .svg-2{
+        display: none;
+    }
+    .local{
+        font-size: 14px;
+    }
+}

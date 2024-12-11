@@ -1,0 +1,106 @@
+@import 'header.css';
+@import 'btn-estilizado.css';
+@import 'pexel-efeito.css';
+@import 'section-1.css';
+@import 'section-2.css';
+@import 'section-3.css';
+@import 'section-4.css';
+@import 'section-5.css';
+@import 'footer.css';
+/*Colors*/
+:root{
+    --color-1:#fff;
+    --color-2:#000000;
+    --color-3:#7c23e9;
+    --color-4:#d071fc;
+}
+/*-------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    max-width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 25px;
+}
+/* Estilo geral da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra vertical */
+    height: 12px; /* Altura da barra horizontal */
+}
+
+/* Cor e estilo do trilho (fundo da barra) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fundo do trilho */
+}
+
+/* Cor e estilo do polegar (parte que se move) */
+::-webkit-scrollbar-thumb {
+    background: #B629F8; /* Cor do polegar */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 3px solid #f1f1f1; /* Espaço entre o polegar e o trilho */
+}
+
+/* Cor do polegar ao passar o mouse (hover) */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor ao passar o mouse */
+}
+@media (max-width:768px) and (min-width:500px){
+    body{
+    background-color: #000000;
+    max-width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 90%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+}

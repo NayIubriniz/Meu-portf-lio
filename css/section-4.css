@@ -1,0 +1,105 @@
+.sessao-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+  width: 100%; /* Ajusta à largura do container pai */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto;
+}
+
+/* Cada projeto individual */
+.projetos {
+  background: #f5f2f2;
+  border: 1px solid #dddddd5b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(45% - 20px); /* Aumenta para ocupar cerca de 45% do espaço */
+  max-width: 500px; /* Limita o tamanho máximo de cada card */
+  height: auto;
+}
+
+/* Ajustes adicionais para o conteúdo interno */
+
+.projetos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.projetos:hover img {
+  transform: scale(1.1); /* Dá um zoom na imagem */
+}
+
+.projetos h3 {
+ margin-top: 10px;
+  font-size: 1.8rem; /* Aumenta o tamanho do título */
+  font-family: poppins;
+  color: var(--color-2);
+}
+.projetos h3:hover{
+  color: var(--color-4);
+  transition: 0.3s ease-out;
+}
+
+.projetos p {
+  padding: 8px;
+  color: var(--color-2);
+  font-size: 13.2px;
+  font-family: Arial, Helvetica, sans-serif; /* Aumenta o tamanho do texto */
+  margin: 0px;
+}
+
+.icons-projeto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 10px;
+}
+.span-cod{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 8px;
+  color: var(--color-4);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.span-cod:hover{
+  color: #302f2f;
+  transition: 0.3s ease-in-out;
+}
+.github{
+  font-size: 22px;
+}
+@media (max-width:768px) and (min-width:500px){
+  .sessao-4{
+    border-top: 1px solid #41414194;
+  }
+  .projetos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .projetos{
+    width: 100%;
+    height: auto;
+  }
+}

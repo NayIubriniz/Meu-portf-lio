@@ -1,0 +1,120 @@
+/* Estilo para o body no modo escuro (padrão) */
+body {
+    background-color: #000000 ;
+    color: #ffffff ;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para o body quando estiver no modo claro (fundo branco e texto preto) */
+body.light-mode {
+    background-color: #ffffff ;
+    color: #000000 ;  /* Texto preto quando o fundo é branco */
+}
+
+/* Links no modo escuro (fundo preto e texto branco) */
+body a {
+    color: #ffffff ; /* Links brancos no modo escuro */
+    text-decoration: none; /* Remover o sublinhado se não desejar */
+}
+
+body a:hover {
+    color: #c84fcc ; /* Cor de hover mais brilhante no modo escuro */
+}
+
+/* Links no modo claro (fundo branco e texto preto) */
+body.light-mode a {
+    color: #171818 ;  /* Links azuis no modo claro */
+    text-decoration: none;
+}
+
+body.light-mode a:hover {
+    color: #171818 ;  /* Cor de hover mais escura no modo claro */
+}
+
+/* Estilo específico para links dentro do <header> e <nav> */
+body.light-mode header a,
+body.light-mode nav a,
+body.light-mode .navbar-nav .nav-link {
+    color: #000000 ;  /* Links pretos no modo claro */
+}
+
+body.light-mode header a:hover,
+body.light-mode nav a:hover,
+body.light-mode .navbar-nav .nav-link:hover {
+    color: #171818;  /* Cor de hover mais escura no modo claro */
+}
+
+/* Garantir que os links no header (no modo escuro) fiquem brancos */
+body a {
+    color: #ffffff ; /* Links brancos no modo escuro */
+}
+
+body a:hover {
+    color: #c84fcc ; /* Cor de hover mais brilhante no modo escuro */
+}
+
+/* Garantir que a cor do texto dentro de body.light-mode seja aplicada corretamente */
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+    color: #000000;  /* Texto preto no modo claro */
+}
+
+
+/* Estilo para o switch (botão) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+
+/* Esconde o checkbox, apenas mostrando o "slider" */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo do "slider" (a parte que se move) */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    cursor: pointer;
+    top: 11px;
+    left: 12px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+/* Bolinha dentro do slider */
+.slider:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white; /* Bolinha branca inicialmente */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Estilo quando o checkbox está marcado (ativo) */
+input:checked + .slider {
+    background-color: rgb(8, 8, 8); /* Slider branco quando ativo */
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px); /* Move a bolinha para a direita */
+    background-color: rgb(252, 249, 249); /* Bolinha preta quando ativo */
+}
