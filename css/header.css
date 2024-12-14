@@ -111,7 +111,7 @@ img.img-portfolio{
     background-size: contain;
     width: 80px;
     height: 3px;
-    left: 45.6%;
+    left: 43.7%;
     top: 51.5%;
     z-index: -1;
     position: absolute;
@@ -221,7 +221,7 @@ img.img-portfolio{
         height: 40px;
     }
     .primeiro-h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .detalhes{
         font-size: 25px;

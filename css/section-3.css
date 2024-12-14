@@ -23,7 +23,7 @@
     margin:0px;
     letter-spacing:25px;
     word-break: break-all;
-    opacity:15%;
+    opacity:30%;
     text-align: start;
 }
 .divisao-formacao{
@@ -84,6 +84,9 @@ h3{
     }
     .divisao-sessao3{
         height: auto;
+    }
+    .p-sessao3{
+        padding: 6px;
     }
     .divisao-formacao{
         display: flex;
