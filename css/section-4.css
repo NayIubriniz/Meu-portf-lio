@@ -2,7 +2,7 @@
   display: flex;
   justify-content:center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 15px;
   width: 100%;
   height: auto;
@@ -36,8 +36,9 @@
 
 .projetos img {
   width: 100%;
-  height: auto;
+  height: 70%;
   display: block;
+  object-fit: cover;
   transition: transform 0.3s ease; /* Transição suave */
 }
 
@@ -46,31 +47,19 @@
 }
 
 .projetos h3 {
- margin-top: 10px;
-  font-size: 1.8rem; /* Aumenta o tamanho do título */
-  font-family: poppins;
-  color: var(--color-2);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px; /* Aumenta o tamanho do título */
+font-family: poppins;
+color: var(--color-2);
 }
 .projetos h3:hover{
   color: var(--color-4);
   transition: 0.3s ease-out;
 }
-
-.projetos p {
-  padding: 8px;
-  color: var(--color-2);
-  font-size: 13.2px;
-  font-family: Arial, Helvetica, sans-serif; /* Aumenta o tamanho do texto */
-  margin: 0px;
-}
-
-.icons-projeto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 10px;
-  padding: 10px;
+.projetos > div.projeto{
+  margin-top: 20px;
 }
 .span-cod{
   display: flex;
@@ -80,14 +69,40 @@
   gap: 8px;
   color: var(--color-4);
   font-size: 15px;
+  width: 120px;
+  height: 55px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
 }
 .span-cod:hover{
-  color: #302f2f;
-  transition: 0.3s ease-in-out;
+  color: #fff;
+  transition: 0.5s ease-in-out;
 }
 .github{
   font-size: 22px;
+}
+.ver-mais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  
+}
+.btn-ver-mais{
+  background-color: blueviolet;
+  color: #f5f2f2;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+.btn-ver-mais:hover{
+  background-color: rgb(51, 12, 87);
+  transition: background-color 0.3s ease;
 }
 @media (max-width:768px) and (min-width:500px){
   .sessao-4{
