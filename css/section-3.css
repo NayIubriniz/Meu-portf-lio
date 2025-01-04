@@ -81,6 +81,7 @@ h3{
         font-size: 35px;
         margin-top: 10px;
         margin-bottom: 10px;
+        letter-spacing: 15px;
     }
     .divisao-sessao3{
         height: auto;
@@ -96,7 +97,7 @@ h3{
         height: auto;
     }
     .formacao-1{
-        width: 160px;
+        width: 159px;
     }
     .divisao-idioma{
         display: flex;
@@ -122,6 +123,7 @@ h3{
         margin: 0 auto;
         height: auto;
         font-size: 45px;
+       
     }
     .divisao-formacao{
         height: auto;

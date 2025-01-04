@@ -9,12 +9,36 @@
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Projetos</title>
+    <script>
+        AOS.init();
+    </script>
 </head>
 <body>
     <nav class="project">
-        <a href="index.html" class="link-portfolio">Voltar ao Portfólio</a>
- </nav>
-
+        <a href="index.html">
+            <img class="imagem-logo" src="img/logo.png" alt="imagem logo">
+        </a>
+        <!--Menu-Hamburguer---------->
+        <div class="menu-hamburguer" id="menu-hamburguer">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!--Menu-Hamburguer---------->
+        <div class="div-listas" id="nav-lista">
+            <ul class="ul-header nav-lista" id="nav-lista">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#experiencia">Experiências</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="toggle-checkbox">
+            <span class="slider"></span>
+        </label>
+    </nav>
+     <a href="index.html" class="link-portfolio">Voltar ao Portfólio</a>
+    
  <div class="sessao-4 sessao-all-projects ">
     <h1 class="h1-section-1 h1-all-projects">Meus Projetos</h1>
     <div class="projetos-container mobile">
@@ -67,6 +91,6 @@
             </div>
           </div>
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>

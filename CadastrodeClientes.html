@@ -9,11 +9,35 @@
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
     <title>Meus projetos</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        AOS.init();
+    </script>
 </head>
 <body  id="projetos" data-aos="zoom-in">
     <nav class="project">
-           <a href="projetos.html" class="link-portfolio">Voltar aos Projetos</a>
+        <a href="index.html">
+            <img class="imagem-logo" src="img/logo.png" alt="imagem logo">
+        </a>
+        <!--Menu-Hamburguer---------->
+        <div class="menu-hamburguer" id="menu-hamburguer">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!--Menu-Hamburguer---------->
+        <div class="div-listas" id="nav-lista">
+            <ul class="ul-header nav-lista" id="nav-lista">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#experiencia">Experiências</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="toggle-checkbox">
+            <span class="slider"></span>
+        </label>
     </nav>
+        <a href="projetos.html" class="link-portfolio">Voltar aos Projetos</a>
     <main>
         <h3 class="h3-projects">Cadastro de Clientes</h3>
         <div class="container-img">

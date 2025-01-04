@@ -1,13 +1,20 @@
 nav.project{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-    height: 51px
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 51px;
+    margin: 0 auto;
+}
+.project > a{
+   padding: 15px;
 }
 .link-portfolio{
     font-family: 'roboto';
     margin-left: 10px;
+    position: absolute;
+    margin-top: 15px;
 }
 .link-portfolio:hover{
     transition: 0.5s ease;
@@ -31,6 +38,7 @@ nav.project{
     margin: 0px;
     letter-spacing: 25px;
     opacity: 30%;
+    margin-top: 15px;
 }
 .imgs-projetos{
     display: flex;
@@ -85,19 +93,43 @@ nav.project{
         font-size: 25px;
         letter-spacing: 8px;
     }
+    .sessao-all-projects{
+        width: 90%;
+    }
     .mobile{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 15px;
-        width: 80%;
         height: auto;
-        padding: 20px;
-        border-top: 1px solid #41414194;
+        padding: 0px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:375px){
+    .h1-all-projects{
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    .sessao-all-projects{
+        width: 90%;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 0px;
+        margin-left: 35px;
     }
 }
 @media (max-width: 440px) and (min-width: 375px){
+    .sessao-all-projects{
+        width: 90%;
+    }
     .h1-all-projects{
         font-size: 35px;
         letter-spacing: 15px;
@@ -108,10 +140,9 @@ nav.project{
         align-items: center;
         flex-direction: column;
         gap: 15px;
-        width: 80%;
         height: auto;
         padding: 20px;
-        border-top: 1px solid #41414194;
+       
     }
 }
 @media (max-width: 384px) and (min-width: 360px){
@@ -127,8 +158,8 @@ nav.project{
         gap: 15px;
         width: 85%;
         height: auto;
-        padding: 20px;
-        border-top: 1px solid #41414194;
+        padding: 0px;
+        margin-right: 36px;
     }
 }
 /*media queries-----------------------------*/
