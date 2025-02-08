@@ -86,6 +86,7 @@ body.light-mode h6 {
     justify-content: center;
     align-content: center;
     position: absolute;
+    margin: 0 auto;
     cursor: pointer;
     top: 11px;
     left: 12px;
