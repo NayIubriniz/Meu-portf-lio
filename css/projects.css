@@ -162,15 +162,28 @@ nav.project{
         margin-right: 36px;
     }
 }
-/*media queries-----------------------------*/
 
 @media (max-width: 440px) and (min-width: 375px){
     .h3-projects{
             font-size: 35px;
             letter-spacing: 15px;
     }
+    .projetos-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     }
 @media (max-width: 384px) and (min-width: 360px){
+    .projetos-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .h3-projects{
         font-size: 30px;
         letter-spacing: 10px;
@@ -180,5 +193,26 @@ nav.project{
     .h3-projects{
         font-size: 25px;
         letter-spacing: 8px;
+    }
+    .projetos-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 834px) and (min-width: 800px){
+    .projetos-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+@media (max-width:2048px) and (min-width: 1114px){
+    .h1-section-1{
+        text-align: center;
     }
 }

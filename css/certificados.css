@@ -1,0 +1,39 @@
+.sessao-certificados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #41414194;
+
+}
+.carousel{
+  margin-top: 15px;
+}
+@media (max-width:320px){
+  .h1-certificado{
+    letter-spacing: 5px;
+    text-align: center;
+  }
+}
+  @media (max-width: 384px) and (min-width: 360px){
+    .h1-certificado{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 844px) and (min-width: 390px){
+    .h1-certificado{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      letter-spacing: 8px;
+      text-align: center;
+    }
+    
+  }
+  

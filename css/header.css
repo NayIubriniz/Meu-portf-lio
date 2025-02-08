@@ -6,9 +6,10 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 450px;
+    width: 600px;
 }
 .ul-header{
+    width: 200%;
     list-style: none;
     font-family: 'Roboto';
     font-size: 15px; 
@@ -168,15 +169,18 @@ img.img-portfolio{
     .svg-2{
         display: none;
     }
+    li > a{
+        font-weight: 300;
+    }
     .div-listas{
         display: none;
-        width: 90%;
+        width:90%;
         position: absolute;
         top: 51px;
-        left: 30;
         background-color: #600f86e5;
         text-align: center;
         z-index: 10;
+       
     }
     .div-listas.active{
         display: block;
@@ -185,16 +189,27 @@ img.img-portfolio{
         display: block;
     }
     .div-listas ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
         flex-direction: column;
     }
     .div-listas ul li{
         margin: 5px 0;
+        padding-right: 332px;
     }
     .div-listas a{
         color: white;
     }
+    .ul-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
-@media (min-width:768px) and (max-width:1024px){
+@media (max-width:1024px) and (min-width:768px){
     .descricao-header{
         gap: 30px;
     }
@@ -224,5 +239,59 @@ img.img-portfolio{
     }
     .local{
         font-size: 14px;
+    }
+    li > a{
+        font-weight: 300;
+    }
+    .div-listas{
+        display: none;
+        width:90%;
+        position: absolute;
+        top: 51px;
+        background-color: #600f86e5;
+        text-align: center;
+        z-index: 10;
+        height: 300px;
+       
+    }
+    .div-listas.active{
+        display: block;
+    }
+    .menu-hamburguer{
+        display: block;
+    }
+    .div-listas ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .div-listas ul li{
+        margin: 5px 0;
+        padding-right: 750px;
+        font-size: 20px;
+    }
+    ul > li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    li > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .div-listas a{
+        color: white;
+    }
+    .ul-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }

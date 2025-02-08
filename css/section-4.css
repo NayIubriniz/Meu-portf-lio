@@ -105,22 +105,8 @@ color: var(--color-2);
   background-color: rgb(51, 12, 87);
   transition: background-color 0.3s ease;
 }
-@media (max-width:768px) and (min-width:500px){
-  .sessao-4{
-    border-top: 1px solid #41414194;
-  }
-  .projetos-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-  }
-  .projetos{
-    width: 80%;
-    height: auto;
-  }
-}
-@media (max-width:440px) and (min-width:414px){
-  
+@media (max-width:844px) and (min-width:390px){
+ .sessao-certificados{
+  border: 1px solid #fff;
+ }
 }
