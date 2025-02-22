@@ -35,13 +35,13 @@ body.light-mode a:hover {
 body.light-mode header a,
 body.light-mode nav a,
 body.light-mode .navbar-nav .nav-link {
-    color: #000000 ;  /* Links pretos no modo claro */
+    color: #131212 ;  /* Links pretos no modo claro */
 }
 
 body.light-mode header a:hover,
 body.light-mode nav a:hover,
 body.light-mode .navbar-nav .nav-link:hover {
-    color: #171818;  /* Cor de hover mais escura no modo claro */
+    color: #383737;  /* Cor de hover mais escura no modo claro */
 }
 
 /* Garantir que os links no header (no modo escuro) fiquem brancos */
@@ -61,7 +61,7 @@ body.light-mode h3,
 body.light-mode h4,
 body.light-mode h5,
 body.light-mode h6 {
-    color: #000000;  /* Texto preto no modo claro */
+    color: #353535;  /* Texto preto no modo claro */
 }
 
 
