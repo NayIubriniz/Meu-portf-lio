@@ -212,7 +212,7 @@ nav.project{
     }
 }
 @media (max-width:2048px) and (min-width: 1114px){
-    .h1-section-1{
+    .h1-section-1 .project{
         text-align: center;
     }
 }
