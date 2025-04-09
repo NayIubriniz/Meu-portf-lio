@@ -44,7 +44,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     height: 300px;
     margin-top: 5%;
 }
@@ -53,8 +53,12 @@ img.img-portfolio{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
     height: 300px;
+    border: 2px solid var(--color-3);
+    box-shadow: 0px 5px 25px rgba(95, 14, 133, 0.5);
+    border-radius: 50%;
+    margin-top: 40px;
 }
 .cv{
     margin-top: 30px;
@@ -107,8 +111,8 @@ img.img-portfolio{
     background-size: contain;
     width: 80px;
     height: 3px;
-    left: 74%;
-    top: 62.5%;
+    left: 76%;
+    top: 61.5%;
     z-index: -1;
     position: absolute;
 }
@@ -153,7 +157,7 @@ img.img-portfolio{
     }
     img.img-portfolio{
         margin-top: 30px;
-        width: 150px;
+        width: 200px;
         height: 200px;
     }
     .cv{
@@ -237,7 +241,7 @@ img.img-portfolio{
         gap: 30px;
     }
     img.img-portfolio{
-        width: 150px;
+        width: 200px;
     }
     a.cv{
         display: flex;
